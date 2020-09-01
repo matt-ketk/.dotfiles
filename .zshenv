@@ -1,1 +1,3 @@
-configurations/.dotfiles/zsh/.zshenv
+#!/bin/zsh
+
+[ -f "$HOME/.config/.env" ] && source "$HOME/.config/.env"
