@@ -70,3 +70,9 @@ bindkey '^e' edit-command-line
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# Settings for WSL X Server (Vcxsrv)
+export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0 # so WSL knows where to connect
+export LIBGL_ALWAYS_INDIRECT=1
+export GDK_SCALE=0.5 # to fix blurriness
+export GDK_DPI_SCALE=2
