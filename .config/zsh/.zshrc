@@ -70,6 +70,11 @@ bindkey '^e' edit-command-line
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+ 
+# Execute startx upon startup
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx
+fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
