@@ -57,5 +57,11 @@ xrandr --output HDMI-1 --mode 1920x1080 &
 # Compositor
 picom -f &
 
+# Wallpaper
+nitrogen --restore &
+
+# DWM Status bar
+$HOME/.config/dwm-bar/dwm_bar.sh &
+
 # Execute DWM
 exec dwm
