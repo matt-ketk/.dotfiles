@@ -48,4 +48,16 @@ Plug 'KeitaNakamura/tex-conceal.vim'
     let g:tex_conceal='abdmg'
     hi Conceal ctermbg=none
 
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'dhruvasagar/vim-table-mode'
 call plug#end()
+
+colorscheme gruvbox
+set background=dark
+set clipboard+=unnamedplus
+
+nmap <leader>gs :G<CR>
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
