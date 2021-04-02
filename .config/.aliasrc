@@ -1,2 +1,8 @@
 # Manage dotfiles
 alias dfconfig='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias dev='cd ~/Development'
+alias config='cd ~/.config'
+alias zshrc='nvim ~/.config/zshrc/.zshrc'
+alias aliases='nvim ~/.config/.aliasrc'
+alias sch='cd ~/Development/school/'
+alias sp21='cd ~/Development/school/sp2021'
